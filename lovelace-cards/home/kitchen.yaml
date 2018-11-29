@@ -1,0 +1,28 @@
+- type: horizontal-stack
+  id: kitchen_main
+  cards:
+    - type: entity-button
+      entity: light.kitchen_lights_level
+      tap_action: toggle
+      hold_action: more-info
+    - type: entity-button
+      entity: light.dining_room_lights_level
+      tap_action: toggle
+      hold_action: more-info
+    - type: entity-button
+      entity: light.osram_lightify_br_rgbw_00a60700_3
+      tap_action: toggle
+      hold_action: more-info
+    - type: entity-button
+      entity: light.laundry_room_lights_level
+      tap_action: toggle
+      hold_action: more-info
+    - type: entity-button
+      entity: switch.media_panel_switch
+      tap_action: more-info
+      hold_action: more-info
+- type: horizontal-stack
+  id: kitchen_media_player_box
+  cards:
+    - type: media-control
+      entity: media_player.kitchen_echo_dot

@@ -1,0 +1,19 @@
+- type: horizontal-stack
+  id: exterior_lights_main
+  cards:
+    - type: entity-button
+      entity: switch.front_porch_lights_switch
+      tap_action: toggle
+      hold_action: more-info
+    - type: entity-button
+      entity: switch.front_hall_lights_switch
+      tap_action: toggle
+      hold_action: more-info
+    - type: entity-button
+      entity: switch.christmas_lights
+      tap_action: toggle
+      hold_action: more-info
+    - type: entity-button
+      entity: light.centralite_4257050rzhac_03bf4e3d_1
+      tap_action: toggle
+      hold_action: more-info

@@ -1,0 +1,25 @@
+- platform: generic_thermostat
+  name: Cool
+  heater: switch.thermostat_cool
+  target_sensor: sensor.average_temp
+  min_temp: 60
+  max_temp: 90
+  initial_operation_mode: "auto"
+  target_temp: 73
+  away_temp: 78
+  cold_tolerance: 0.5
+  hot_tolerance: 0.5
+  ac_mode: true
+
+- platform: generic_thermostat
+  name: Heat
+  heater: switch.thermostat_heat
+  target_sensor: sensor.average_temp
+  min_temp: 60
+  max_temp: 90
+  initial_operation_mode: "auto"
+  target_temp: 73
+  away_temp: 65
+  cold_tolerance: 0.5
+  hot_tolerance: 0.5
+  ac_mode: false

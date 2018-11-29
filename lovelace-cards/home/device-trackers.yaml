@@ -1,0 +1,20 @@
+- type: horizontal-stack
+  id: device_tracker_ maps
+  cards:
+    - type: picture-glance
+      title: Amanda
+      id: device_map_amanda
+      entities:
+        - device_tracker.amanda_winkle
+      camera_image: camera.amanda
+    - type: picture-glance
+      title: Jacob
+      id: device_map_jacob
+      entities:
+        - device_tracker.jacob_winkle
+      camera_image: camera.jacob
+- type: glance
+  id: device_trackers
+  entities:
+    - device_tracker.amanda_winkle
+    - device_tracker.jacob_winkle

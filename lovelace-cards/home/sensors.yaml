@@ -1,0 +1,39 @@
+- type: horizontal-stack
+  id: sensor_1
+  cards:
+    - type: glance
+      id: sensors
+      columns: 6
+      entities:
+        - sun.sun
+        - sensor.front_door
+        - sensor.kitchen_door
+        - sensor.back_door
+        - sensor.kitchen_window
+        - sensor.office_window
+- type: horizontal-stack
+  id: sensor_2
+  cards:
+    - type: glance
+      id: sensors
+      columns: 6
+      entities:
+        - sensor.boogie_window
+        - sensor.grammie_window
+        - sensor.amanda_window
+        - sensor.jacob_window
+        - sensor.living_room_motion
+        - sensor.master_bedroom_motion
+- type: horizontal-stack
+  id: sensor_3
+  cards:
+    - type: glance
+      id: sensors
+      columns: 6
+      entities:
+        - sensor.average_temp
+        - sensor.living_room_motion_temperature
+        - sensor.vision_zp3111_multisensor_4in1_temperature
+        - sensor.visonic_mct340_sma_05044555_1_1026
+        - sensor.thermostat_temp
+        - sensor.big_red_button_temp

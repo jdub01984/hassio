@@ -1,0 +1,67 @@
+- platform: template
+  sensors:
+    front_door:
+      value_template: "{%if states.sensor.front_door_alarm_level.state == '255' %}open{% elif states.sensor.front_door_alarm_level.state == '0' %}closed{% endif %}"
+      friendly_name: "Front Door"
+
+    back_door:
+      value_template: "{%if states.sensor.back_door_alarm_level.state == '255' %}open{% elif states.sensor.back_door_alarm_level.state == '0' %}closed{% endif %}"
+      friendly_name: "Back Door"
+
+    kitchen_door:
+      value_template: "{%if states.sensor.kitchen_door_alarm_level.state == '255' %}open{% elif states.sensor.kitchen_door_alarm_level.state == '0' %}closed{% endif %}"
+      friendly_name: "Kitchen Door"
+
+    kitchen_window:
+      value_template: "{%if states.sensor.kitchen_window_alarm_level.state == '255' %}open{% elif states.sensor.kitchen_window_alarm_level.state == '0' %}closed{% endif %}"
+      friendly_name: "Kitchen Window"
+
+    boogie_window:
+      value_template: "{%if states.sensor.boogie_window_alarm_level.state == '255' %}open{% elif states.sensor.boogie_window_alarm_level.state == '0' %}closed{% endif %}"
+      friendly_name: "Boogie's Window"
+
+    grammie_window:
+      value_template: "{%if states.sensor.tommy_window_alarm_level.state == '255' %}open{% elif states.sensor.tommy_window_alarm_level.state == '0' %}closed{% endif %}"
+      friendly_name: "Grammie's Window"
+
+    amanda_window:
+      value_template: "{%if states.sensor.amanda_window_alarm_level.state == '255' %}open{% elif states.sensor.amanda_window_alarm_level.state == '0' %}closed{% endif %}"
+      friendly_name: "Amanda's Window"
+
+    jacob_window:
+      value_template: "{%if states.sensor.jacob_window_alarm_level.state == '255' %}open{% elif states.sensor.jacob_window_alarm_level.state == '0' %}closed{% endif %}"
+      friendly_name: "Jacob's Window"
+
+    office_window:
+      value_template: "{%if states.sensor.office_window_access_control.state == '22' %}open{% elif states.sensor.office_window_access_control.state == '23' %}closed{% endif %}"
+      friendly_name: "Office Window"
+
+    living_room_motion:
+      value_template: "{%if states.sensor.living_room_motion_alarm_level.state == '255' %}true{% elif states.sensor.living_room_motion_alarm_level.state == '0' %}false{% endif %}"
+      friendly_name: "Living Room Motion"
+      
+    master_bedroom_motion:
+      value_template: "{%if states.sensor.vision_zp3111_multisensor_4in1_alarm_level.state == '255' %}true{% elif states.sensor.vision_zp3111_multisensor_4in1_alarm_level.state == '0' %}false{% endif %}"
+      friendly_name: "Master Bedroom Motion"
+
+- platform: mqtt
+  name: "Thermostat Temp"
+  state_topic: "tele/thermostat/SENSOR"
+  value_template: "{{ value_json.DS18B20.Temperature }}"
+  unit_of_measurement: °F
+  
+- platform: mqtt
+  name: "Big Red Button Temp"
+  state_topic: "tele/big_red_button/SENSOR"
+  value_template: "{{ value_json.DS18B20.Temperature }}"
+  unit_of_measurement: °F
+  
+- platform: min_max
+  name: "Average Temp"
+  type: mean
+  entity_ids:
+  - sensor.vision_zp3111_multisensor_4in1_temperature
+  - sensor.living_room_motion_temperature
+  - sensor.visonic_mct340_sma_05044555_1_1026
+  - sensor.thermostat_temp
+  - sensor.big_red_button_temp

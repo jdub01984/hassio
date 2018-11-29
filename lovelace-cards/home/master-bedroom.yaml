@@ -1,0 +1,28 @@
+- type: horizontal-stack
+  id: master_bedroom_main
+  cards:
+    - type: entity-button
+      entity: light.ledvance_br30_rgbw_0000c4d0_1
+      tap_action: toggle
+      hold_action: more-info
+    - type: entity-button
+      entity: light.ledvance_br30_rgbw_0000b6e5_1
+      tap_action: toggle
+      hold_action: more-info
+    - type: entity-button
+      entity: light.ledvance_br30_rgbw_0000c21c_1
+      tap_action: toggle
+      hold_action: more-info
+    - type: entity-button
+      entity: light.ledvance_br30_rgbw_0000cf2a_1
+      tap_action: toggle
+      hold_action: more-info
+    - type: entity-button
+      entity: fan.bedroom_fan_level
+      tap_action: toggle
+      hold_action: more-info
+- type: horizontal-stack
+  id: living_room_media_player_box
+  cards:
+    - type: media-control
+      entity: media_player.master_bedroom_echo_dot

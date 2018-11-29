@@ -1,0 +1,25 @@
+- type: horizontal-stack
+  id: thermostats
+  cards:
+    - type: thermostat
+      entity: climate.cool
+    - type: thermostat
+      entity: climate.heat
+- type: horizontal-stack
+  id: thermostat_buttons
+  cards:
+    - type: entity-button
+      entity: switch.thermostat_cool
+      icon: mdi:thermostat
+      tap_action: toggle
+      hold_action: more-info
+    - type: entity-button
+      entity: switch.thermostat_heat
+      icon: mdi:thermostat
+      tap_action: toggle
+      hold_action: more-info
+    - type: entity-button
+      entity: switch.thermostat_fan
+      icon: mdi:thermostat
+      tap_action: toggle
+      hold_action: more-info

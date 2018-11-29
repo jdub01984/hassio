@@ -1,0 +1,53 @@
+- platform: mjpeg
+  name: OD1
+  username: !secret camera_login
+  password: !secret camera_password
+  mjpeg_url: http://192.168.3.200/img/video.mjpeg
+  
+- platform: mjpeg
+  name: OD2
+  username: !secret camera_login
+  password: !secret camera_password
+  mjpeg_url: http://192.168.3.201/img/video.mjpeg
+  
+- platform: mjpeg
+  name: OD3
+  username: !secret camera_login
+  password: !secret camera_password
+  mjpeg_url: http://192.168.3.202/img/video.mjpeg
+  
+- platform: mjpeg
+  name: OD4
+  username: !secret camera_login
+  password: !secret camera_password
+  mjpeg_url: http://192.168.3.229/img/video.mjpeg
+  
+- platform: mjpeg
+  name: BG1
+  username: !secret camera_login_1
+  password: !secret camera_password
+  mjpeg_url: http://192.168.3.211/mjpeg.cgi
+  
+- platform: mjpeg
+  name: BG2
+  username: !secret camera_login
+  password: !secret camera_password
+  mjpeg_url: http://192.168.3.210/img/video.mjpeg
+  
+- platform: mjpeg
+  name: TMY
+  username: !secret camera_login
+  password: !secret camera_password
+  mjpeg_url: http://192.168.3.216/img/video.mjpeg
+  
+# Map of Amanda's location
+- platform: generic
+  name: amanda
+  still_image_url: https://maps.googleapis.com/maps/api/staticmap?center={{ states.device_tracker.amanda_winkle.attributes.latitude }},{{ states.device_tracker.amanda_winkle.attributes.longitude }}&zoom=13&size=500x500&maptype=roadmap&markers=color:pink%7Clabel:A%7C{{ states.device_tracker.amanda_winkle.attributes.latitude }},{{ states.device_tracker.amanda_winkle.attributes.longitude }}&key=AIzaSyDw0y0RrLsRe-KntTk6gXNJD-7q9qce8U4
+  limit_refetch_to_url_change: true
+  
+# Map of Jacob's location
+- platform: generic
+  name: jacob
+  still_image_url: https://maps.googleapis.com/maps/api/staticmap?center={{ states.device_tracker.jacob_winkle.attributes.latitude }},{{ states.device_tracker.jacob_winkle.attributes.longitude }}&zoom=13&size=500x500&maptype=roadmap&markers=color:blue%7Clabel:J%7C{{ states.device_tracker.jacob_winkle.attributes.latitude }},{{ states.device_tracker.jacob_winkle.attributes.longitude }}&key=AIzaSyDw0y0RrLsRe-KntTk6gXNJD-7q9qce8U4
+  limit_refetch_to_url_change: true

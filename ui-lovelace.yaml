@@ -1,0 +1,48 @@
+title: Winkle Household
+# Include external resources
+resources:
+#  - url: /local/my-custom-card.js
+#    type: js
+#  - url: /local/custom.css
+#    type: css
+
+# Optional background for all views. Check https://developer.mozilla.org/en-US/docs/Web/CSS/background for more examples.
+background: center / cover no-repeat url("/local/beach.jpg") fixed
+
+views:
+    # View tab title.
+  - title: Home
+    # Unique id for direct access /lovelace/${id}. If you don't specify one, it is added automatically.
+    id: home
+    icon: mdi:home
+    cards:
+    - type: vertical-stack
+      id: device_trackers_and_map
+      cards: !include lovelace-cards/home/device-trackers.yaml
+    - type: vertical-stack
+      id: sensor-main
+      cards: !include lovelace-cards/home/sensors.yaml
+    - type: vertical-stack
+      id: living_room
+      cards: !include lovelace-cards/home/living-room.yaml
+    - type: vertical-stack
+      id: master_bedroom
+      cards: !include lovelace-cards/home/master-bedroom.yaml
+    - type: vertical-stack
+      id: thermostat_main
+      cards: !include lovelace-cards/home/thermostat.yaml
+    - type: vertical-stack
+      id: kitchen
+      cards: !include lovelace-cards/home/kitchen.yaml
+    - type: vertical-stack
+      id: master_bedroom
+      cards: !include lovelace-cards/home/exterior-lights.yaml
+  - title: Remotes
+    icon: mdi:remote
+    cards: 
+    - type: vertical-stack
+      id: lg_tv_remote
+      cards: !include lovelace-cards/remotes/vizio-tv.yaml
+    - type: vertical-stack
+      id: fire_tv_remote
+      cards: !include lovelace-cards/remotes/fire-tv.yaml

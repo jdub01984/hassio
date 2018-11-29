@@ -1,0 +1,71 @@
+- platform: mqtt
+  name: "Big Red Button"
+  state_topic: "stat/sonoff-od1/POWER"
+  command_topic: "cmnd/sonoff-od1/POWER"
+  availability_topic: "tele/sonoff-od1/LWT"
+  qos: 1
+  payload_on: "on"
+  payload_off: "off"
+  payload_available: "Online"
+  payload_not_available: "Offline"
+  retain: false
+  
+  ##########################################
+  #                                        #
+  #          Thermostat Switches           #
+  #                                        #
+  ##########################################
+- platform: mqtt
+  name: "Thermostat Fan"
+  state_topic: "stat/thermostat/POWER1"
+  command_topic: "cmnd/thermostat/POWER1"
+  qos: 1
+  payload_on: "ON"
+  payload_off: "OFF"
+  state_on: "ON"
+  state_off: "OFF"
+  retain: false
+  
+- platform: mqtt
+  name: "Thermostat Heat"
+  state_topic: "stat/thermostat/POWER2"
+  command_topic: "cmnd/thermostat/POWER2"
+  qos: 1
+  payload_on: "ON"
+  payload_off: "OFF"
+  state_on: "ON"
+  state_off: "OFF"
+  retain: false
+  
+- platform: mqtt
+  name: "Thermostat Cool"
+  state_topic: "stat/thermostat/POWER3"
+  command_topic: "cmnd/thermostat/POWER3"
+  qos: 1
+  payload_on: "ON"
+  payload_off: "OFF"
+  state_on: "ON"
+  state_off: "OFF"
+  retain: false
+  
+- platform: mqtt
+  name: "Christmas Lights"
+  state_topic: "stat/christmas-lights/POWER"
+  command_topic: "cmnd/christmas-lights/POWER"
+  qos: 1
+  payload_on: "ON"
+  payload_off: "OFF"
+  state_on: "ON"
+  state_off: "OFF"
+  retain: false
+  
+- platform: mqtt
+  name: "Big Red Button"
+  state_topic: "stat/big_red_button/POWER"
+  command_topic: "cmnd/big_red_button/POWER"
+  qos: 1
+  payload_on: "ON"
+  payload_off: "OFF"
+  state_on: "ON"
+  state_off: "OFF"
+  retain: false

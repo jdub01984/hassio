@@ -1,0 +1,272 @@
+# Trigger Boolean when Jacob gets home
+- id: jacob-comes-home
+  alias: 'Jacob Comes Home'
+  trigger:
+    platform: zone
+    entity_id: device_tracker.jacob_winkle
+    zone: zone.home
+    event: enter
+  action:
+   - service: input_boolean.turn_on
+     entity_id: input_boolean.notify_home_jacob
+  
+# Trigger Boolean when Jacob leaves home
+- id: jacob-leaves-home
+  alias: 'Jacob Leaves Home'
+  trigger:
+    platform: zone
+    entity_id: device_tracker.jacob_winkle
+    zone: zone.home
+    event: leave
+  action:
+   - service: input_boolean.turn_off
+     entity_id: input_boolean.notify_home_jacob
+
+# Trigger Boolean when Amanda gets home
+- id: amanda-comes-home
+  alias: 'Amanda Comes Home'
+  trigger:
+    platform: zone
+    entity_id: device_tracker.amanda_winkle
+    zone: zone.home
+    event: enter
+  action:
+   - service: input_boolean.turn_on
+     entity_id: input_boolean.notify_home_amanda
+
+# Trigger Boolean when Amanda leaves home  
+- id: amanda-leaves-home
+  alias: 'Amanda Leaves Home'
+  trigger:
+    platform: zone
+    entity_id: device_tracker.amanda_winkle
+    zone: zone.home
+    event: leave
+  action:
+   - service: input_boolean.turn_off
+     entity_id: input_boolean.notify_home_amanda
+
+# Says Welcome when Jacob Gets Home
+- id: welcome-home-jacob
+  alias: "Welcome Home Jacob"
+  trigger:
+    platform: state
+    entity_id: sensor.front_door
+    to: 'open'
+  condition: 
+    condition: state
+    entity_id: input_boolean.notify_home_jacob
+    state: 'on'
+  action:
+    - service: tts.google_say
+      entity_id: media_player.living_room_speaker
+      data:
+        message: 'Welcome Home Jacob'
+    - service: media_player.alexa_tts
+      entity_id: media_player.kitchen_echo_dot
+      data:
+        message:  'Welcome Home Jacob'
+    - service: media_player.alexa_tts
+      entity_id: media_player.master_bedroom_echo_dot
+      data:
+        message:  'Welcome Home Jacob'
+    - service: input_boolean.turn_off
+      entity_id: input_boolean.notify_home_jacob
+
+# Says Welcome when Amanda Gets Home
+- id: welcome-home-amanda
+  alias: "Welcome Home Amanda"
+  trigger:
+    platform: state
+    entity_id: sensor.front_door
+    to: 'open'
+  condition: 
+    condition: state
+    entity_id: input_boolean.notify_home_amanda
+    state: 'on'
+  action:
+    - service: tts.google_say
+      entity_id: media_player.living_room_speaker
+      data:
+        message: 'Welcome Home Amanda'
+    - service: media_player.alexa_tts
+      entity_id: media_player.kitchen_echo_dot
+      data:
+        message:  'Welcome Home Amanda'
+    - service: media_player.alexa_tts
+      entity_id: media_player.master_bedroom_echo_dot
+      data:
+        message:  'Welcome Home Amanda'
+    - service: input_boolean.turn_off
+      entity_id: input_boolean.notify_home_amanda
+      
+- id: door_window_opened
+  alias: "Door or Window Opened"
+  trigger:
+    platform: state
+    entity_id:
+      - sensor.front_door
+      - sensor.kitchen_door
+      - sensor.back_door
+      - sensor.kitchen_window
+      - sensor.office_window
+      - sensor.boogie_window
+      - sensor.grammie_window
+      - sensor.amanda_window
+      - sensor.jacob_window
+    to: 'open'
+  action:
+    service: notify.slack
+    data_template:
+      message: ""
+      data:
+        attachments:
+        - color: >
+            #800040
+        - title: >
+            {{ trigger.to_state.attributes.friendly_name }} was opened.
+        - text: |
+            Time: {{now().strftime("%c")}}
+
+# Big Red Button  Togles Bedroom Light 1
+#- id: big_red_button
+#  alias: Big Red Button
+#  trigger:
+#    - platform: state
+#      entity_id: switch.big_red_button
+#      to: "on"
+#    - platform: state
+#      entity_id: switch.big_red_button
+#      to: "off"
+#  action:
+#    - service: light.toggle
+#      entity_id:  light.ledvance_br30_rgbw_0000c4d0_1
+      
+##########################################################
+#                                                        #
+#                                                        #
+#                Light timers deprecated                 #
+#                   Moved to Nodered                     #
+#                                                        #
+#                                                        #
+##########################################################
+# Turns on Front Porch Lights at Sunset
+#- id: porch-light-on-sunset
+#  alias: 'Porch Lights on Sunset'  
+#  trigger:
+#    platform: sun
+#    event: sunset
+#    offset: "-00:15:00"
+#  action:
+#   - service: switch.turn_on
+#     entity_id: switch.ge_14291_inwall_smart_switch_switch
+    
+# Turns Off Front Porch Lights at Sunrise
+#- id: porch-light-off-sunrise
+#  alias: 'Porch Light off Sunrise'
+#  trigger:
+#    platform: sun
+#    event: sunrise
+#    offset: "00:15:00"
+#  action:
+#   - service: switch.turn_off
+#     entity_id: switch.ge_14291_inwall_smart_switch_switch
+
+# Turns on Christmas Lights at Sunset
+#- id: christmas-light-on-sunset
+#  alias: 'Christmas Lights on Sunset'  
+#  trigger:
+#    platform: sun
+#    event: sunset
+#    offset: "-00:35:00"
+#  action:
+#   - service: switch.turn_on
+#     entity_id: switch.christmas_lights
+
+# Turns off Christmas Lights at 1AM
+#- id: christmas-light-off-1am
+#  alias: 'Christmas Lights off 1AM'  
+#  trigger:
+#    platform: time
+#    at: '01:00:00'
+#  action:
+#   - service: switch.turn_off
+#     entity_id: switch.christmas_lights
+
+# Turns on Christmas Tree at Sunset
+#- id: christmas-tree-on-sunset
+#  alias: 'Christmas Tree on Sunset'  
+#  trigger:
+#    platform: sun
+#    event: sunset
+#    offset: "-00:35:00"
+#  action:
+#   - service: light.turn_on
+#     entity_id: light.centralite_4257050rzhac_03bf4e3d_1
+
+# Turns off Christmas Lights at 1AM
+#- id: christmas-tree-off-12am
+#  alias: 'Christmas Tree off 12AM'  
+#  trigger:
+#    platform: time
+#    at: '00:00:00'
+#  action:
+#   - service: light.turn_off
+#     entity_id: light.centralite_4257050rzhac_03bf4e3d_1
+
+##########################################################
+#                                                        #
+#                                                        #
+#            Thermostat functions deprecated             #
+#                   Moved to Nodered                     #
+#                                                        #
+#                                                        #
+##########################################################
+#- id: no_ac_when_heat
+#  alias: No AC when the Heat is on
+#  trigger:
+#    platform: state
+#    entity_id: switch.thermostat_cool
+#    to: "on"
+#  action:
+#    - service: switch.turn_off
+#      entity_id: switch.thermostat_heat
+#    - service: switch.turn_on
+#      entity_id: switch.thermostat_fan
+
+#- id: no_heat_when_ac
+#  alias: No Heat when the AC is on
+#  trigger:
+#    platform: state
+#    entity_id: switch.thermostat_heat
+#    to: "on"
+#  action:
+#    - service: switch.turn_off
+#      entity_id: switch.thermostat_cool
+#    - service: switch.turn_on
+#      entity_id: switch.thermostat_fan
+      
+#- id: no_heat_or_cool_when_fan_off
+#  alias: No Heat or Cool when the Fan is Off
+#  trigger:
+#    platform: state
+#    entity_id: switch.thermostat_fan
+#    to: "off"
+#  action:
+#    - service: switch.turn_off
+#      entity_id: switch.thermostat_heat
+#    - service: switch.turn_off
+#      entity_id: switch.thermostat_cool
+      
+#- id: no_fan_if_heat_and_cool_off
+#  alias: No Fan if Heat or Cool are off
+#  trigger:
+#    - platform: state
+#      entity_id: switch.thermostat_heat
+#      to: "off"
+#    - platform: state
+#      entity_id: switch.thermostat_cool
+#      to: "off"
+#  action:
+#    service: switch.turn_off
+#    entity_id: switch.thermostat_fan

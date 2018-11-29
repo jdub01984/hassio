@@ -1,0 +1,7 @@
+- name: Work
+  latitude: !secret wk1_latitude
+  longitude: !secret wk1_longitude
+  
+- name: Work
+  latitude: !secret wk2_latitude
+  longitude: !secret wk2_longitude

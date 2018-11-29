@@ -1,0 +1,11 @@
+notify_home_jacob:
+  name: Jacob just arrived home
+  initial: off
+
+notify_home_amanda:
+  name: Amanda just arrived home
+  initial: off
+
+media_server_phone_home:
+  name: Media Server Keep Alive
+  initial: off

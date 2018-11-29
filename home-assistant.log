@@ -1,0 +1,422 @@
+2018-11-29 03:57:56 WARNING (MainThread) [homeassistant.loader] You are using a custom component for device_tracker.life360 which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you do experience issues with Home Assistant.
+2018-11-29 03:57:56 WARNING (MainThread) [homeassistant.loader] You are using a custom component for media_player.alexa which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you do experience issues with Home Assistant.
+2018-11-29 03:58:07 ERROR (MainThread) [homeassistant.core] Error doing job: SSL handshake failed
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 609, in uvloop.loop.UVStream._on_eof
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 03:58:07 ERROR (MainThread) [homeassistant.core] Error doing job: SSL error errno:1 reason: HTTP_REQUEST
+Traceback (most recent call last):
+  File "uvloop/sslproto.pyx", line 504, in uvloop.loop.SSLProtocol.data_received
+  File "uvloop/sslproto.pyx", line 204, in uvloop.loop._SSLPipe.feed_ssldata
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 03:58:07 ERROR (MainThread) [homeassistant.core] Error doing job: SSL handshake failed
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 609, in uvloop.loop.UVStream._on_eof
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 03:58:07 ERROR (MainThread) [homeassistant.core] Error doing job: SSL error errno:1 reason: HTTP_REQUEST
+Traceback (most recent call last):
+  File "uvloop/sslproto.pyx", line 504, in uvloop.loop.SSLProtocol.data_received
+  File "uvloop/sslproto.pyx", line 204, in uvloop.loop._SSLPipe.feed_ssldata
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 03:58:08 ERROR (MainThread) [homeassistant.core] Error doing job: SSL handshake failed
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 609, in uvloop.loop.UVStream._on_eof
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 03:58:08 ERROR (MainThread) [homeassistant.core] Error doing job: SSL error errno:1 reason: HTTP_REQUEST
+Traceback (most recent call last):
+  File "uvloop/sslproto.pyx", line 504, in uvloop.loop.SSLProtocol.data_received
+  File "uvloop/sslproto.pyx", line 204, in uvloop.loop._SSLPipe.feed_ssldata
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 03:58:22 ERROR (MainThread) [homeassistant.core] Error doing job: SSL handshake failed
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 609, in uvloop.loop.UVStream._on_eof
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 03:58:22 ERROR (MainThread) [homeassistant.core] Error doing job: SSL error errno:1 reason: HTTP_REQUEST
+Traceback (most recent call last):
+  File "uvloop/sslproto.pyx", line 504, in uvloop.loop.SSLProtocol.data_received
+  File "uvloop/sslproto.pyx", line 204, in uvloop.loop._SSLPipe.feed_ssldata
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 03:58:29 WARNING (SyncWorker_6) [plexapi] BadRequest (401) unauthorized http://192.168.3.126:32400/; <html><head><script>window.location = window.location.href.match(/(^.+\/)[^\/]*$/)[1] + 'web/index.html';</script><title>Unauthorized</title></head><body><h1>401 Unauthorized</h1></body></html>
+2018-11-29 03:58:33 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 192.168.3.126
+2018-11-29 03:58:42 ERROR (MainThread) [homeassistant.core] Error doing job: SSL handshake failed
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 609, in uvloop.loop.UVStream._on_eof
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 03:58:42 ERROR (MainThread) [homeassistant.core] Error doing job: SSL error errno:1 reason: HTTP_REQUEST
+Traceback (most recent call last):
+  File "uvloop/sslproto.pyx", line 504, in uvloop.loop.SSLProtocol.data_received
+  File "uvloop/sslproto.pyx", line 204, in uvloop.loop._SSLPipe.feed_ssldata
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 03:59:12 ERROR (MainThread) [homeassistant.core] Error doing job: SSL handshake failed
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 609, in uvloop.loop.UVStream._on_eof
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 03:59:12 ERROR (MainThread) [homeassistant.core] Error doing job: SSL error errno:1 reason: HTTP_REQUEST
+Traceback (most recent call last):
+  File "uvloop/sslproto.pyx", line 504, in uvloop.loop.SSLProtocol.data_received
+  File "uvloop/sslproto.pyx", line 204, in uvloop.loop._SSLPipe.feed_ssldata
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 03:59:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL handshake failed
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 609, in uvloop.loop.UVStream._on_eof
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 03:59:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL error errno:1 reason: HTTP_REQUEST
+Traceback (most recent call last):
+  File "uvloop/sslproto.pyx", line 504, in uvloop.loop.SSLProtocol.data_received
+  File "uvloop/sslproto.pyx", line 204, in uvloop.loop._SSLPipe.feed_ssldata
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:00:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL handshake failed
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 609, in uvloop.loop.UVStream._on_eof
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:00:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL error errno:1 reason: HTTP_REQUEST
+Traceback (most recent call last):
+  File "uvloop/sslproto.pyx", line 504, in uvloop.loop.SSLProtocol.data_received
+  File "uvloop/sslproto.pyx", line 204, in uvloop.loop._SSLPipe.feed_ssldata
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:01:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL handshake failed
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 609, in uvloop.loop.UVStream._on_eof
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:01:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL error errno:1 reason: HTTP_REQUEST
+Traceback (most recent call last):
+  File "uvloop/sslproto.pyx", line 504, in uvloop.loop.SSLProtocol.data_received
+  File "uvloop/sslproto.pyx", line 204, in uvloop.loop._SSLPipe.feed_ssldata
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:02:38 WARNING (MainThread) [bellows.zigbee.application] Unexpected response TSN=129 command=32769 args=[<Status.SUCCESS: 0>, 00:0d:6f:00:03:bf:4e:3d, 4323, 0, 0, []]
+2018-11-29 04:02:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL handshake failed
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 609, in uvloop.loop.UVStream._on_eof
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:02:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL error errno:1 reason: HTTP_REQUEST
+Traceback (most recent call last):
+  File "uvloop/sslproto.pyx", line 504, in uvloop.loop.SSLProtocol.data_received
+  File "uvloop/sslproto.pyx", line 204, in uvloop.loop._SSLPipe.feed_ssldata
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:03:48 WARNING (SyncWorker_7) [plexapi] BadRequest (401) unauthorized http://192.168.3.130:32400/; <html><head><script>window.location = window.location.href.match(/(^.+\/)[^\/]*$/)[1] + 'web/index.html';</script><title>Unauthorized</title></head><body><h1>401 Unauthorized</h1></body></html>
+2018-11-29 04:03:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL handshake failed
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 609, in uvloop.loop.UVStream._on_eof
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:03:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL error errno:1 reason: HTTP_REQUEST
+Traceback (most recent call last):
+  File "uvloop/sslproto.pyx", line 504, in uvloop.loop.SSLProtocol.data_received
+  File "uvloop/sslproto.pyx", line 204, in uvloop.loop._SSLPipe.feed_ssldata
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:04:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL handshake failed
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 609, in uvloop.loop.UVStream._on_eof
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:04:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL error errno:1 reason: HTTP_REQUEST
+Traceback (most recent call last):
+  File "uvloop/sslproto.pyx", line 504, in uvloop.loop.SSLProtocol.data_received
+  File "uvloop/sslproto.pyx", line 204, in uvloop.loop._SSLPipe.feed_ssldata
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:05:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL handshake failed
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 609, in uvloop.loop.UVStream._on_eof
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:05:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL error errno:1 reason: HTTP_REQUEST
+Traceback (most recent call last):
+  File "uvloop/sslproto.pyx", line 504, in uvloop.loop.SSLProtocol.data_received
+  File "uvloop/sslproto.pyx", line 204, in uvloop.loop._SSLPipe.feed_ssldata
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:06:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL handshake failed
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 609, in uvloop.loop.UVStream._on_eof
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:06:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL error errno:1 reason: HTTP_REQUEST
+Traceback (most recent call last):
+  File "uvloop/sslproto.pyx", line 504, in uvloop.loop.SSLProtocol.data_received
+  File "uvloop/sslproto.pyx", line 204, in uvloop.loop._SSLPipe.feed_ssldata
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:07:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL handshake failed
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 609, in uvloop.loop.UVStream._on_eof
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:07:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL error errno:1 reason: HTTP_REQUEST
+Traceback (most recent call last):
+  File "uvloop/sslproto.pyx", line 504, in uvloop.loop.SSLProtocol.data_received
+  File "uvloop/sslproto.pyx", line 204, in uvloop.loop._SSLPipe.feed_ssldata
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:08:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL handshake failed
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 609, in uvloop.loop.UVStream._on_eof
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:08:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL error errno:1 reason: HTTP_REQUEST
+Traceback (most recent call last):
+  File "uvloop/sslproto.pyx", line 504, in uvloop.loop.SSLProtocol.data_received
+  File "uvloop/sslproto.pyx", line 204, in uvloop.loop._SSLPipe.feed_ssldata
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:09:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL handshake failed
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 609, in uvloop.loop.UVStream._on_eof
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:09:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL error errno:1 reason: HTTP_REQUEST
+Traceback (most recent call last):
+  File "uvloop/sslproto.pyx", line 504, in uvloop.loop.SSLProtocol.data_received
+  File "uvloop/sslproto.pyx", line 204, in uvloop.loop._SSLPipe.feed_ssldata
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:10:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL handshake failed
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 609, in uvloop.loop.UVStream._on_eof
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:10:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL error errno:1 reason: HTTP_REQUEST
+Traceback (most recent call last):
+  File "uvloop/sslproto.pyx", line 504, in uvloop.loop.SSLProtocol.data_received
+  File "uvloop/sslproto.pyx", line 204, in uvloop.loop._SSLPipe.feed_ssldata
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:11:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL handshake failed
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 609, in uvloop.loop.UVStream._on_eof
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:11:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL error errno:1 reason: HTTP_REQUEST
+Traceback (most recent call last):
+  File "uvloop/sslproto.pyx", line 504, in uvloop.loop.SSLProtocol.data_received
+  File "uvloop/sslproto.pyx", line 204, in uvloop.loop._SSLPipe.feed_ssldata
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:12:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL handshake failed
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 609, in uvloop.loop.UVStream._on_eof
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:12:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL error errno:1 reason: HTTP_REQUEST
+Traceback (most recent call last):
+  File "uvloop/sslproto.pyx", line 504, in uvloop.loop.SSLProtocol.data_received
+  File "uvloop/sslproto.pyx", line 204, in uvloop.loop._SSLPipe.feed_ssldata
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:13:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL handshake failed
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 609, in uvloop.loop.UVStream._on_eof
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:13:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL error errno:1 reason: HTTP_REQUEST
+Traceback (most recent call last):
+  File "uvloop/sslproto.pyx", line 504, in uvloop.loop.SSLProtocol.data_received
+  File "uvloop/sslproto.pyx", line 204, in uvloop.loop._SSLPipe.feed_ssldata
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:14:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL handshake failed
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 609, in uvloop.loop.UVStream._on_eof
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:14:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL error errno:1 reason: HTTP_REQUEST
+Traceback (most recent call last):
+  File "uvloop/sslproto.pyx", line 504, in uvloop.loop.SSLProtocol.data_received
+  File "uvloop/sslproto.pyx", line 204, in uvloop.loop._SSLPipe.feed_ssldata
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:15:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL handshake failed
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 609, in uvloop.loop.UVStream._on_eof
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:15:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL error errno:1 reason: HTTP_REQUEST
+Traceback (most recent call last):
+  File "uvloop/sslproto.pyx", line 504, in uvloop.loop.SSLProtocol.data_received
+  File "uvloop/sslproto.pyx", line 204, in uvloop.loop._SSLPipe.feed_ssldata
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:16:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL handshake failed
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 609, in uvloop.loop.UVStream._on_eof
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:16:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL error errno:1 reason: HTTP_REQUEST
+Traceback (most recent call last):
+  File "uvloop/sslproto.pyx", line 504, in uvloop.loop.SSLProtocol.data_received
+  File "uvloop/sslproto.pyx", line 204, in uvloop.loop._SSLPipe.feed_ssldata
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:17:37 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/aiohttp/web_protocol.py", line 390, in start
+    resp = await self._request_handler(request)
+  File "/usr/local/lib/python3.6/site-packages/aiohttp/web_app.py", line 366, in _handle
+    resp = await handler(request)
+  File "/usr/local/lib/python3.6/site-packages/aiohttp/web_middlewares.py", line 106, in impl
+    return await handler(request)
+  File "/usr/local/lib/python3.6/site-packages/homeassistant/components/http/static.py", line 66, in staticresource_middleware
+    return await handler(request)
+  File "/usr/local/lib/python3.6/site-packages/homeassistant/components/http/real_ip.py", line 34, in real_ip_middleware
+    return await handler(request)
+  File "/usr/local/lib/python3.6/site-packages/homeassistant/components/http/ban.py", line 66, in ban_middleware
+    return await handler(request)
+  File "/usr/local/lib/python3.6/site-packages/homeassistant/components/http/auth.py", line 97, in auth_middleware
+    return await handler(request)
+  File "/usr/local/lib/python3.6/site-packages/homeassistant/components/http/real_ip.py", line 34, in real_ip_middleware
+    return await handler(request)
+  File "/usr/local/lib/python3.6/site-packages/homeassistant/components/http/ban.py", line 66, in ban_middleware
+    return await handler(request)
+  File "/usr/local/lib/python3.6/site-packages/homeassistant/components/http/auth.py", line 97, in auth_middleware
+    return await handler(request)
+  File "/usr/local/lib/python3.6/site-packages/homeassistant/components/http/view.py", line 113, in handle
+    result = await result
+  File "/usr/local/lib/python3.6/site-packages/homeassistant/components/hassio/http.py", line 67, in _handle
+    return _create_response_log(client, data)
+  File "/usr/local/lib/python3.6/site-packages/homeassistant/components/hassio/http.py", line 120, in _create_response_log
+    log = re.sub(r"\x1b(\[.*?[@-~]|\].*?(\x07|\x1b\\))", "", data.decode())
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc7 in position 1824: invalid continuation byte
+2018-11-29 04:17:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL handshake failed
+Traceback (most recent call last):
+  File "uvloop/handles/stream.pyx", line 609, in uvloop.loop.UVStream._on_eof
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:17:57 ERROR (MainThread) [homeassistant.core] Error doing job: SSL error errno:1 reason: HTTP_REQUEST
+Traceback (most recent call last):
+  File "uvloop/sslproto.pyx", line 504, in uvloop.loop.SSLProtocol.data_received
+  File "uvloop/sslproto.pyx", line 204, in uvloop.loop._SSLPipe.feed_ssldata
+  File "uvloop/sslproto.pyx", line 171, in uvloop.loop._SSLPipe.feed_ssldata
+  File "/usr/local/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: HTTP_REQUEST] http request (_ssl.c:841)
+2018-11-29 04:28:54 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/bellows/zigbee/application.py", line 241, in request
+    v = await send_fut
+zigpy.exceptions.DeliveryError: Message send failure: EmberStatus.DELIVERY_FAILED
+2018-11-29 04:28:54 WARNING (MainThread) [bellows.zigbee.application] Unexpected response TSN=135 command=32769 args=[<Status.SUCCESS: 0>, f0:d1:b8:00:00:00:c4:d0, 24643, 0, 0, []]
+2018-11-29 04:28:54 WARNING (MainThread) [bellows.zigbee.application] Unexpected response TSN=136 command=32769 args=[<Status.SUCCESS: 0>, f0:d1:b8:00:00:00:c4:d0, 24643, 0, 0, []]
+2018-11-29 04:28:55 WARNING (MainThread) [zigpy.zdo] Unknown ZDO cluster 0x8038
+2018-11-29 04:28:55 WARNING (MainThread) [bellows.zigbee.application] Unexpected response TSN=0 command=32824 args=b'\x00\x00\xf8\xff\x07(\x00\x0b\x00\x10\xba\xb0\xbd\xb4\xb9\xa1\xa5\xa5\xa1\xa0\xa1\xa2\xa3\xa0\xa1\xa0'
+2018-11-29 04:28:55 WARNING (MainThread) [bellows.zigbee.application] Unexpected response TSN=132 command=32769 args=[<Status.SUCCESS: 0>, f0:d1:b8:00:00:00:c4:d0, 24643, 0, 0, []]
+2018-11-29 04:28:55 WARNING (MainThread) [bellows.zigbee.application] Unexpected response TSN=133 command=32769 args=[<Status.SUCCESS: 0>, f0:d1:b8:00:00:00:c4:d0, 24643, 0, 0, []]
+2018-11-29 04:28:56 WARNING (MainThread) [bellows.zigbee.application] Unexpected response TSN=134 command=32769 args=[<Status.SUCCESS: 0>, f0:d1:b8:00:00:00:c4:d0, 24643, 0, 0, []]

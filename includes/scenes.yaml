@@ -1,0 +1,6 @@
+- name: Big_Red_Button_Light
+  entities:
+    light.ledvance_br30_rgbw_0000c4d0_1:
+      state: true
+      rgb_color: ['255', '0', '0']
+      brightness: 75

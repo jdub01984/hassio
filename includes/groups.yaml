@@ -1,0 +1,149 @@
+default_view:
+  view: true
+  icon: mdi:home
+  entities:
+    - group.amanda_and_jacob
+    - group.sensors
+    - group.master_bedroom
+    - group.living_room
+    - group.kitchen
+    - group.night_lights
+    - group.laundry_room
+    - group.garage
+    - group.office
+    - group.automations
+    - group.thermostat
+    - group.christmas
+
+cameras:
+  view: true
+  entities:
+    - group.outdoor_cams
+    - group.kids_cams
+
+Living Room:
+  control: hidden
+  entities:
+    - light.bedroom_lights_level
+    - fan.ge_14287_fan_control_switch_level
+    - remote.harmony_hub
+    - media_player.living_room_speaker
+
+Master Bedroom:
+  control: hidden
+  entities:
+    - light.ledvance_br30_rgbw_0000c4d0_1
+    - light.ledvance_br30_rgbw_0000b6e5_1
+    - light.ledvance_br30_rgbw_0000c21c_1
+    - light.ledvance_br30_rgbw_0000cf2a_1
+    - fan.ge_12730_fan_control_switch_level
+    - sensor.big_red_button_temp
+    - media_player.master_bedroom_echo_dot
+
+Kitchen:
+  control: hidden
+  entities:
+    - light.ge_14294_inwall_smart_dimmer_level_2
+    - light.ge_14294_inwall_smart_dimmer_level
+    - media_player.kitchen_echo_dot
+
+Laundry Room:
+  control: hidden
+  entities:
+    - light.ge_14294_inwall_smart_dimmer_level_3
+    - switch.media_panel_switch
+
+Garage:
+  control: hidden
+  entities:
+    - switch.ge_14291_inwall_smart_switch_switch
+    - switch.ge_14291_inwall_smart_switch_switch_2
+
+#Office:
+#  control: hidden
+#  entities:
+#    - light.centralite_4257050rzhac_03bf4e3d_1
+#    - sensor.centralite_4257050rzhac_03bf4e3d_1_2820
+
+Night Lights:
+  control: hidden
+  entities:
+    - light.osram_lightify_br_rgbw_00a60700_3
+
+Sensors:
+  control: hidden
+  entities:
+    - sun.sun
+    - sensor.front_door
+    - sensor.kitchen_door
+    - sensor.back_door
+    - sensor.kitchen_window
+    - sensor.office_window
+    - sensor.boogie_window
+    - sensor.grammie_window
+    - sensor.amanda_window
+    - sensor.jacob_window
+    - sensor.living_room_motion
+    - sensor.master_bedroom_motion
+    - sensor.average_temp
+    - sensor.vision_zp3111_multisensor_4in1_temperature
+    - sensor.vision_zp3111_multisensor_4in1_temperature_2
+    - sensor.visonic_mct340_sma_05044555_1_1026
+    - sensor.thermostat_temp
+    - sensor.big_red_button_temp
+    
+
+Outdoor Cams:
+  control: hidden
+  entities:
+    - camera.od1
+    - camera.od2
+    - camera.od3
+    - camera.od4
+
+Kids Cams:
+  control: hidden
+  entities:
+    - camera.bg1
+    - camera.bg2
+    - camera.tmy
+    
+Amanda and Jacob:
+  control: hidden
+  entities:
+    - device_tracker.amanda_winkle
+    - device_tracker.jacob_winkle
+    - camera.amanda
+    - camera.jacob
+
+Automations:
+  control: hidden
+  entities:
+    - automation.welcome_home_amanda
+    - automation.welcome_home_jacob
+    - automation.door_or_window_opened
+#    - automation.christmas_lights_on_sunset
+#    - automation.christmas_lights_off_1am
+#    - automation.christmas_tree_on_sunset
+#    - automation.christmas_tree_off_12am
+#    - automation.no_ac_when_the_heat_is_on
+#    - automation.no_heat_when_the_ac_is_on
+#    - automation.no_fan_if_heat_or_cool_are_off
+#    - automation.no_heat_or_cool_when_the_fan_is_off
+#    - automation.porch_lights_on_sunset
+#    - automation.porch_light_off_sunrise
+
+Thermostat:
+  control: hidden
+  entities:
+    - climate.cool
+    - climate.heat
+    - switch.thermostat_cool
+    - switch.thermostat_heat
+    - switch.thermostat_fan
+    - sensor.thermostat_temp
+    
+Christmas:
+  entities:
+    - light.centralite_4257050rzhac_03bf4e3d_1
+    - switch.christmas_lights

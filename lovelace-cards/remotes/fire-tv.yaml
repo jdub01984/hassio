@@ -1,0 +1,190 @@
+- type: glance
+  title: Fire TV
+  show_state: false
+  entities:
+    # Top Row
+    - entity: binary_sensor.kitchen_door_sensor
+      icon: mdi:home
+      name:
+      tap_action: call-service
+      service: remote.send_command
+      service_data:
+        "entity_id": "remote.harmony_hub"
+        "device": "58372939"
+        "command": "Home"
+    - entity: binary_sensor.kitchen_door_sensor
+      icon: mdi:reply
+      name:
+      tap_action: call-service
+      service: remote.send_command
+      service_data:
+        "entity_id": "remote.harmony_hub"
+        "device": "58372939"
+        "command": "Back"
+    - entity: binary_sensor.kitchen_door_sensor
+      icon: mdi:menu-up
+      name:
+      tap_action: call-service
+      service: remote.send_command
+      service_data:
+        "entity_id": "remote.harmony_hub"
+        "device": "58372939"
+        "command": "DirectionUp"
+    - entity: binary_sensor.kitchen_door_sensor
+      icon: mdi:menu
+      name:
+      tap_action: call-service
+      service: remote.send_command
+      service_data:
+        "entity_id": "remote.harmony_hub"
+        "device": "58372939"
+        "command": "Menu"
+    - entity: binary_sensor.kitchen_door_sensor
+      icon: mdi:sleep
+      name:
+      tap_action: call-service
+      service: remote.send_command
+      service_data:
+        "entity_id": "remote.harmony_hub"
+        "device": "58372939"
+        "command": "Sleep"
+
+    # 2nd Row
+    - entity: binary_sensor.kitchen_door_sensor
+      icon: mdi:volume-plus
+      name:
+      tap_action: call-service
+      service: remote.send_command
+      service_data:
+        "entity_id": "remote.harmony_hub"
+        "device": "37066852"
+        "command": "VolumeUp"
+    - entity: binary_sensor.kitchen_door_sensor
+      icon: mdi:menu-left
+      name:
+      tap_action: call-service
+      service: remote.send_command
+      service_data:
+        "entity_id": "remote.harmony_hub"
+        "device": "58372939"
+        "command": "DirectionLeft"
+    - entity: binary_sensor.kitchen_door_sensor
+      icon: mdi:check-circle-outline
+      name:
+      tap_action: call-service
+      service: remote.send_command
+      service_data:
+        "entity_id": "remote.harmony_hub"
+        "device": "58372939"
+        "command": "OK"
+    - entity: binary_sensor.kitchen_door_sensor
+      icon: mdi:arrow-right
+      name:
+      tap_action: call-service
+      service: remote.send_command
+      service_data:
+        "entity_id": "remote.harmony_hub"
+        "device": "58372939"
+        "command": "DirectionRight"
+    - entity: binary_sensor.kitchen_door_sensor
+      icon: mdi:backspace
+      name:
+      tap_action: call-service
+      service: remote.send_command
+      service_data:
+        "entity_id": "remote.harmony_hub"
+        "device": "58372939"
+        "command": "Delete"
+
+    # 3rd Row
+    - entity: binary_sensor.kitchen_door_sensor
+      icon: mdi:vlume-minus
+      name:
+      tap_action: call-service
+      service: remote.send_command
+      service_data:
+        "entity_id": "remote.harmony_hub"
+        "device": "37066852"
+        "command": "VolumeDown"
+    - entity: binary_sensor.kitchen_door_sensor
+      icon: mdi:volume-mute
+      name:
+      tap_action: call-service
+      service: remote.send_command
+      service_data:
+        "entity_id": "remote.harmony_hub"
+        "device": "37066852"
+        "command": "Mute"
+    - entity: binary_sensor.kitchen_door_sensor
+      icon: mdi:arrow-down
+      name:
+      tap_action: call-service
+      service: remote.send_command
+      service_data:
+        "entity_id": "remote.harmony_hub"
+        "device": "58372939"
+        "command": "DirectionDown"
+    - entity: binary_sensor.kitchen_door_sensor
+      icon: mdi:rewind-outline
+      name:
+      tap_action: call-service
+      service: remote.send_command
+      service_data:
+        "entity_id": "remote.harmony_hub"
+        "device": "58372939"
+        "command": "SKipBack"
+    - entity: binary_sensor.kitchen_door_sensor
+      icon: mdi:fast-forward-outline
+      name:
+      tap_action: call-service
+      service: remote.send_command
+      service_data:
+        "entity_id": "remote.harmony_hub"
+        "device": "58372939"
+        "command": "SkipForward"
+    # 4th Row
+    - entity: binary_sensor.kitchen_door_sensor
+      icon: mdi:rewind
+      name:
+      tap_action: call-service
+      service: remote.send_command
+      service_data:
+        "entity_id": "remote.harmony_hub"
+        "device": "58372939"
+        "command": "Rewind"
+    - entity: binary_sensor.kitchen_door_sensor
+      icon: mdi:stop
+      name:
+      tap_action: call-service
+      service: remote.send_command
+      service_data:
+        "entity_id": "remote.harmony_hub"
+        "device": "58372939"
+        "command": "Stop"
+    - entity: binary_sensor.kitchen_door_sensor
+      icon: mdi:pause
+      name:
+      tap_action: call-service
+      service: remote.send_command
+      service_data:
+        "entity_id": "remote.harmony_hub"
+        "device": "58372939"
+        "command": "Pause"
+    - entity: binary_sensor.kitchen_door_sensor
+      icon: mdi:play
+      name:
+      tap_action: call-service
+      service: remote.send_command
+      service_data:
+        "entity_id": "remote.harmony_hub"
+        "device": "58372939"
+        "command": "Play"
+    - entity: binary_sensor.kitchen_door_sensor
+      icon: mdi:fast-forward
+      name:
+      tap_action: call-service
+      service: remote.send_command
+      service_data:
+        "entity_id": "remote.harmony_hub"
+        "device": "58372939"
+        "command": "FastForward"
